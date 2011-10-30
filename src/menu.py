@@ -23,6 +23,7 @@ RIGHT    = 4
 
 class Menu(gameState.GameState):
     def __init__(self, parent=None, title=None, width=800, height=600, hAlign=CENTERED, background=None):
+        gameState.GameState.__init__(self)
         if background:
             self.background = background
         else:
